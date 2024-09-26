@@ -1,5 +1,12 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-smart-buffer (4.2.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Source-only upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Sun, 01 Jan 2023 16:34:47 +0400
+
+node-smart-buffer (4.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1025952)
+
+ -- Israel Galadima <izzygaladima@gmail.com>  Sat, 17 Dec 2022 14:38:10 +0100

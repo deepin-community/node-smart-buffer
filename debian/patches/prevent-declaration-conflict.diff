@@ -1,0 +1,28 @@
+Prevents naming conflict between import and interface
+--- a/src/utils.ts
++++ b/src/utils.ts
+@@ -94,6 +94,7 @@
+   return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
+ }
+ 
++/*
+ interface Buffer {
+   readBigInt64BE(offset?: number): bigint;
+   readBigInt64LE(offset?: number): bigint;
+@@ -105,6 +106,7 @@
+   writeBigUInt64BE(value: bigint, offset?: number): number;
+   writeBigUInt64LE(value: bigint, offset?: number): number;
+ }
++*/
+ 
+ /**
+  * Throws if Node.js version is too low to support bigint
+@@ -115,7 +117,7 @@
+   }
+ 
+   if (typeof Buffer.prototype[bufferMethod] === 'undefined') {
+-    throw new Error(`Platform does not support Buffer.prototype.${bufferMethod}.`);
++    throw new Error("Platform does not support Buffer.prototype." + String(bufferMethod));
+   }
+ }
+ 

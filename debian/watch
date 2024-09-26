@@ -1,0 +1,7 @@
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Origin url: https://github.com/JoshGlazebrook/smart-buffer
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,pgpmode=none" \
+ https://registry.npmjs.org/smart-buffer \
+ https://registry.npmjs.org/smart-buffer/-/smart-buffer-(\d[\d\.]*)@ARCHIVE_EXT@
