@@ -1,0 +1,19 @@
+Stops emitting type declarations in order to not edit source files type declarations
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -7,8 +7,6 @@
+         "moduleResolution": "node",
+         "outDir": "build",
+         "watch": false,
+-        "declaration": true,
+-        "declarationDir": "typings",
+         "removeComments":false,
+         "noImplicitAny": true,
+         "typeRoots": [
+@@ -25,4 +23,4 @@
+       "typings",
+       "test"
+     ]
+-}
+\ No newline at end of file
++}
